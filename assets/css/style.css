@@ -439,6 +439,23 @@ main {
 	justify-self: start;
 }
 
+@media (max-width: 990px) {
+	
+	main {
+		margin: 0 16px 61px;
+	}
+
+	.product_primary {
+		display: flex;
+		flex-direction: column;
+		justify-items: flex-start;
+		align-items: stretch;
+		row-gap: 16px;
+
+		margin-bottom: 64px;
+	}
+}
+
 
 
 
