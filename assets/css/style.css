@@ -24,8 +24,9 @@ body {
 }
 
 main {
-	margin: 0 120px;
-	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
 }
 
 .breadcrumbs {
@@ -190,7 +191,8 @@ main {
 	margin: 0 0 8px 0;
 }
 
-.product_illustration > img {
+.product_illustration .primary_pic {
+	max-width: 457px;
 	margin: 0 0 16px 0;
 }
 
