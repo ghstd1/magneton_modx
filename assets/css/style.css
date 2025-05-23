@@ -58,6 +58,8 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-areas: 'gallery description description';
 	gap: 40px;
+
+	margin-bottom: 80px;
 }
 
 .product_gallery {
@@ -284,6 +286,10 @@ main {
 	color: var(--palette_black);
 }
 
+.product_compound {
+	margin-bottom: 80px;
+}
+
 .product_compound > .product_compound_title {
 	font-size: 32px;
 	font-weight: 700;
@@ -338,6 +344,103 @@ main {
 	letter-spacing: 0%;
 	text-align: center;
 }
+
+/* ------------------------------------------------- */
+
+.product_contact_form {
+	display: flex;
+	gap: 40px;
+
+	margin-bottom: 136px;
+}
+
+.product_contact_form .product_contact_form_title {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 110%;
+
+	margin: 0 0 0 0;
+	max-width: 456px;
+}
+
+.product_contact_form .product_contact_form_wrap {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr 1fr 144px 1fr;
+	grid-template-areas: 
+		"name email"
+		"phone phone"
+		"appeal appeal"
+		"submit .";
+	column-gap: 40px;
+	row-gap: 16px;
+
+	flex-grow: 1;
+}
+
+.product_contact_form .product_contact_form_input_wrap.name {
+	grid-area: name;
+}
+
+.product_contact_form .product_contact_form_input_wrap.email {
+	grid-area: email;
+}
+
+.product_contact_form .product_contact_form_input_wrap.phone {
+	grid-area: phone;
+}
+
+.product_contact_form .product_contact_form_input_wrap.appeal {
+	grid-area: appeal;
+}
+
+.product_contact_form_input_wrap.appeal > textarea {
+	height: 90px;
+}
+
+.product_contact_form .contact_form_input_label {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--palette_grey);
+
+	margin-bottom: 4px;
+}
+
+.product_contact_form .contact_form_input {
+	appearance: none;
+
+	width: calc(100% - 34px);
+	height: 16px;
+	padding-top: 14px;
+	padding-right: 16px;
+	padding-bottom: 14px;
+	padding-left: 16px;
+	border-width: 1px;
+	border: 1px solid var(--palette_grey);
+	border-radius: 5px;
+
+	resize: none;
+}
+
+.product_contact_form .contact_form_submit {
+	appearance: none;
+	padding: 12px 24px;
+	height: 40px;
+	border: 1px solid var(--palette_accent_blue);
+	border-radius: 5px;
+	background-color: var(--palette_accent_blue);
+	color: var(--palette_white);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	text-align: center;
+	justify-self: start;
+}
+
+
+
 
 
 
