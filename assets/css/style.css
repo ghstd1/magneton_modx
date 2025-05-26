@@ -147,6 +147,7 @@ main {
 	
 	color: var(--palette_grey);
 	flex-grow: 1;
+	cursor: pointer;
 }
 
 .product_description_criteria_type_list li:not(.chosen) {
